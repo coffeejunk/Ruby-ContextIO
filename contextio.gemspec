@@ -5,10 +5,10 @@ Gem::Specification.new do |s|
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Gary Haran"]
+  s.authors = ["Gary Haran", "Konstantin Krauss"]
   s.date = %q{2011-04-06}
-  s.email = %q{gary.haran@gmail.com}
-  s.files = ["lib/contextio.rb", "Rakefile", "README.textile"]
+  s.email = ["gary.aran@gmail.com", "konstantin@propertybase.com"]
+  s.files = ["lib/contextio.rb", "Rakefile", "README.md"]
   s.homepage = %q{http://context.io/}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.1}

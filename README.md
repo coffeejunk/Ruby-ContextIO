@@ -9,6 +9,16 @@ If all you want is to use the gem can install it with the following command:
 
 You can get more information at [http://context.io](http://context.io).  Complete API documentation is available at [http://context.io/docs/1.1/](http://context.io/docs/1.1/).
 
+Modifications by konsti/propertybase
+------------------------------------
+Added support for ContextIO API Version 1.1.
+  * addresses(options)
+  * contact_search(options)
+  * account_info(options)
+  * oauth_providers(options)
+  
+No guarantee for completeness.
+
 An example
 ----------
 
