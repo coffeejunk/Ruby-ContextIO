@@ -90,8 +90,8 @@ module ContextIO
       get 'imap/removeaccount', options
     end
 
-    def reset_status
-      get 'imap/resetstatus'
+    def reset_status(options)
+      get 'imap/resetstatus', options
     end
 
     def download_file(options)
