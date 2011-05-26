@@ -12,10 +12,11 @@ You can get more information at [http://context.io](http://context.io).  Complet
 Modifications by konsti/propertybase
 ------------------------------------
 Added support for ContextIO API Version 1.1.
-  * addresses(options)
-  * contact_search(options)
-  * account_info(options)
-  * oauth_providers(options)
+
+- addresses(options)
+- contact_search(options)
+- account_info(options)
+- oauth_providers(options)
   
 No guarantee for completeness.
 
