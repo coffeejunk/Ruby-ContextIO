@@ -109,7 +109,9 @@ module ContextIO
     end
 
     def get(*args)
-      @token.get(url(*args), "Accept" => "application/json").body
+      get_url = url(*args)
+      Rails.logger.debug "ContextIO::Connection get_url => #{get_url}"
+      @token.get(get_url, "Accept" => "application/json").body
     end
 
     def parametrize(options)
