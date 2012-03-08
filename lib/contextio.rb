@@ -9,17 +9,25 @@ module ContextIO
       @consumer = OAuth::Consumer.new(key, secret, {:site => server, :sheme => :header})
       @token    = OAuth::AccessToken.new @consumer
     end
-    
+
     def addresses(options)
       get 'addresses', options
     end
-    
+
     def all_messages(options)
       get 'allmessages', {:limit => 10, :since => 0}.merge(options)
     end
 
     def all_files(options)
       get 'allfiles', {:since => 0}.merge(options)
+    end
+
+    def addresses(options)
+      get 'addresses', options
+    end
+
+    def contact_search(options)
+      get 'contactsearch', options
     end
 
     def contact_files(options)
@@ -29,11 +37,11 @@ module ContextIO
     def contact_messages(options)
       get 'contactmessages', options
     end
-    
+
     def contact_search(options)
       get 'contactsearch', options
     end
-    
+
     def diff_summary(options)
       get 'diffsummary', options
     end
@@ -69,11 +77,11 @@ module ContextIO
     def discover(options)
       get 'imap/discover', options
     end
-    
+
     def account_info(options)
       get 'imap/accountinfo', options
     end
-    
+
     def add_account(options)
       get 'imap/addaccount', options
     end
@@ -90,8 +98,12 @@ module ContextIO
       get 'imap/removeaccount', options
     end
 
-    def reset_status(options)
-      get 'imap/resetstatus', options
+    def oauth_providers
+      get 'imap/oauthproviders'
+    end
+
+    def reset_status
+      get 'imap/resetstatus'
     end
 
     def download_file(options)

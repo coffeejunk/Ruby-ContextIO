@@ -4,7 +4,7 @@ require 'rake'
 require 'rake/gempackagetask'
 
 GEM = "contextio"
-GEM_VERSION = "0.2.0"
+GEM_VERSION = "0.3.0"
 SUMMARY = "Provides interface for Context.IO email"
 AUTHOR = ["Gary Haran", "Konstantin Krauss"]
 EMAIL = ["gary.haran@gmail.com", "konstantin@propertybase.com"]
