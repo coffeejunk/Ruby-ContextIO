@@ -122,7 +122,11 @@ module ContextIO
 
     def get(*args)
       get_url = url(*args)
-      Rails.logger.debug "ContextIO::Connection get_url => #{get_url.sub(/(?<=password\=).*(?=\&usessl)/, '[FILTERED]')}"
+      begin
+        output = get_url.sub(/(?<=password\=).*(?=\&usessl)/, '[FILTERED]')
+        Rails.logger.debug "ContextIO::Connection get_url => #{output}"
+      rescue NameError
+      end
       @token.get(get_url, "Accept" => "application/json").body
     end
 
