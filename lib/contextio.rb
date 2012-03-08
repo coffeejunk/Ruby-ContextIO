@@ -110,7 +110,7 @@ module ContextIO
 
     def get(*args)
       get_url = url(*args)
-      Rails.logger.debug "ContextIO::Connection get_url => #{get_url}"
+      Rails.logger.debug "ContextIO::Connection get_url => #{get_url.sub(/(?<=password\=).*(?=\&usessl)/, '[FILTERED]')}"
       @token.get(get_url, "Accept" => "application/json").body
     end
 
