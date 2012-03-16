@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.5.1}
   s.summary = %q{Provides interface for Context.IO email}
 
+  s.add_dependency('oauth', '~> 0.4.5')
+
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
